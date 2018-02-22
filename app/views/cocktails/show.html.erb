@@ -1,9 +1,11 @@
 
-<h1> <%=   @cocktail.name %> </h1>
+  <h1> <%=   @cocktail.name %> </h1>
 
-<h3> <% if @cocktail.doses == nil %> </h3>
+  <% @cocktail.doses.each do |dose| %>
+  <h3> <%= dose.ingredient.name %> </h3>
+  <h4> <%= dose.description %> </h3>
+  <% end %>
 
-<h3> <%= @cocktail.doses%> </h3>
 
  <%= link_to "back to index", cocktails_path %>
 
