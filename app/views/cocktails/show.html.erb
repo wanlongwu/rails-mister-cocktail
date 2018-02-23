@@ -9,7 +9,7 @@
   <h3> <%= dose.ingredient.name %> </h3>
   <h4> <%= dose.description %> </h3>
     <div class="add-new btn btn-warning">
-      <%= link_to "delete", dose_path %>
+      <%= link_to "delete", dose_path(dose), :method => :delete %>
     </div>
   <% end %>
   <p>------------------------------------</p>
