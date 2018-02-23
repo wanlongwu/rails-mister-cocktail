@@ -4,13 +4,13 @@ class PhotoUploader < CarrierWave::Uploader::Base
   # include CarrierWave::MiniMagick
   include Cloudinary::CarrierWave
 
-  process eager: true  # Force version generation at upload time.
+  # process eager: true  # Force version generation at upload time.
 
-  process convert: 'jpg'
+  # process convert: 'jpg'
 
-  version :thumnail do
-    resize_to_fit 256, 256
-  end
+  # version :thumnail do
+  #   resize_to_fit 256, 256
+  # end
   # Choose what kind of storage to use for this uploader:
   # storage :file
   # # storage :fog
