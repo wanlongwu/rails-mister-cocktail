@@ -1,28 +1,4 @@
 // Import page-specific CSS files here.
 @import "home";
-
-body {
-  background-color: #ADD8D6;
-}
-
-.big-wrapper-center {
-  padding-top: 150px;
-}
-
-.index{
-  display: flex;
-  justify-content: center;
-  height: 400px;
-}
-
-.card {
-  margin: 20px;
-}
-
-.add_new {
-  background-color:#FFD972;
-}
-.button-wrapper {
-  display: flex;
-  justify-content: center;
-}
+@import "new";
+@import "show"

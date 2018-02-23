@@ -30,3 +30,7 @@ Ingredient.create(name: "pineapple juice")
 # d.ingredient = 6
 # d.ingredient = 4
 
+url = "http://res.cloudinary.com/db9cynf8x/image/upload/v1519365643/jr9wwkvz0bkzqsgpxd9l.jpg"
+cocktail = Cocktail.new(name: 'Rum and Coke')
+cocktail.remote_photo_url = url
+cocktail.save
